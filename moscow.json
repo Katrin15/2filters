@@ -1,0 +1,71 @@
+[{  "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Москва",     
+    "edu_name": "среднее"                          
+},        
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Москва",     
+    "edu_name": "переводчик англ"                          
+},
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Спб",     
+    "edu_name": "среднее"                          
+},
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Спб",     
+    "edu_name": "высшее"                          
+},
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Спб",     
+    "edu_name": "переводчик англ"                          
+},
+{
+    "user_id": "3",                      
+    "user_name": "Юля",         
+    "city_name": "Спб",     
+    "edu_name": "колледж"                          
+},  
+{
+    "user_id": "2",                      
+    "user_name": "Петя",         
+    "city_name": "Спб",     
+    "edu_name": "школьное"                          
+}, 
+{
+    "user_id": "2",                      
+    "user_name": "Петя",         
+    "city_name": "Спб",     
+    "edu_name": "колледж"                          
+},
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Геленджик",     
+    "edu_name": "переводчик англ"                          
+},   
+{
+    "user_id": "2",                      
+    "user_name": "Петя",         
+    "city_name": "Москва",     
+    "edu_name": "школьное"                          
+}, 
+{
+    "user_id": "1",                      
+    "user_name": "Вася",         
+    "city_name": "Москва",     
+    "edu_name": "высшее"                          
+},  
+{
+    "user_id": "15",                      
+    "user_name": "Гена",         
+    "city_name": "Калиниград",     
+    "edu_name": "повар"                          
+}]

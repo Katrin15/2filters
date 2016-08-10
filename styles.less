@@ -1,0 +1,31 @@
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+@green: #92DD5A;
+
+.container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.showChosen {
+	list-style: none;
+	min-height: 30px;
+	padding-left: 15px;
+
+	li {
+		display: inline-block;
+		border: solid @green 1px;
+		//background-color: lighten(@green, 30%);
+		background: url(../img/cancel.png) no-repeat right center lighten(@green, 50%);
+		padding: 5px 45px 5px 5px;
+		.border-radius;
+	}
+}

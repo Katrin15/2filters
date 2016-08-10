@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="filters">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/styles.css" rel="stylesheet"/>
+
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+		<div class="container" ng-controller="TableDataController"> <!-- ng-controller="TableDataController as TableDataCtrl" -->
+		
+
+			<div class="row">
+				<label for="select_city" class="col-sm-3 col-md-3 control-label">Выберите город(а)</label>
+				<div class="col-sm-9 col-md-2">
+					<select class="form-control" name="citiesName" id="select_city" ng-model="cityName" 
+					ng-options="item for item in cityOptions" ng-change="addToFilter()" >
+					</select>					
+				</div>
+			</div>
+			
+		
+			<div class="row">
+				<ul class="showChosen">
+					<li ng-repeat="city in selectedCity" ng-click="removeFromFilter()">
+						{{city}}
+					</li> 
+				</ul>
+			</div>
+
+			<div class="row">
+				<label for="select_edu" class="col-sm-3 col-md-3 control-label">Выберите образование(я)</label>
+				<div class="col-sm-9 col-md-2">
+					<select class="form-control" name="citiesName" id="select_edu" ng-model="eduName" 
+					ng-options="item for item in eduOptions" ng-change="addToFilterEdu()" >
+					</select>
+				</div>
+			</div>
+			
+		
+			<div class="row">
+				<ul class="showChosen">
+					<li ng-repeat="edu in selectedEdu" ng-click="removeFromFilterEdu()">
+						{{edu}}
+					</li> 
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-2 col-md-2">
+					<button class="btn btn-default" type="button" ng-click="sendFilter()">Применить фильтр</button>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="table-responsive">
+					<table class = "table table-bordered" > 
+						<thead>
+						    <tr>
+						        <th>
+						        	Пользователь				           	
+						        </th>				        
+						        <th>
+						        	Образование				        	
+						        </th>
+						        <th>
+						        	Город				        	
+						        </th>
+						    </tr>
+					    </thead>
+
+						<tbody>
+							<tr ng-repeat="user in tableData">
+								<td>
+									{{user.user_name}}	
+								</td>
+								<td>
+									{{user.edu_name}}	
+								</td>
+								<td>
+									{{user.city_name}}	
+								</td>	
+							</tr>
+
+							
+						</tbody>
+
+					</table>
+				</div>
+			</div>
+				
+
+		</div> <!-- container -->
+
+
+
+
+
+	<!--  <script src="script.js"></script> -->
+</body>
+</html>
